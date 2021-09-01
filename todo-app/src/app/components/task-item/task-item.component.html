@@ -1,0 +1,15 @@
+<mat-card [ngClass]="{complete: task.isComplete}">
+    <h3>       
+        <mat-checkbox color="primary"
+                      class="rounded"
+                      [(ngModel)]="task.isComplete"
+                      (ngModelChange)="onComplete(task)">
+        </mat-checkbox>
+        {{ task.description }}
+        <fa-icon class="icon"
+            (click)="onDelete(task)"
+            [ngStyle]="{color:'red'}"
+            [icon]="faTimes">
+        </fa-icon>
+    </h3>
+</mat-card>

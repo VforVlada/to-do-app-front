@@ -1,0 +1,26 @@
+mat-card {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+mat-card.complete {
+    text-decoration: line-through;
+}
+
+mat-card:hover {
+    background: #dfdddd;
+}
+
+mat-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+::ng-deep .rounded {
+    & .mat-checkbox-background, .mat-checkbox-frame {
+      border-radius: 50%;
+    }
+}
